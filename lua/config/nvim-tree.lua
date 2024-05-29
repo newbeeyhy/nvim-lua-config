@@ -4,6 +4,8 @@ if not status then
 	return
 end
 
+vim.opt.termguicolors = true
+
 nvim_tree.setup({
   sort_by = "case_sensitive",
 	-- 是否显示 git 状态
@@ -22,7 +24,7 @@ nvim_tree.setup({
 	number = false,
 	relativenumber = false,
 	signcolumn = "yes", -- 显示图标
-	width = 30,
+	width = 25,
   },
   renderer = {
     group_empty = true,
